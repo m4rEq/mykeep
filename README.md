@@ -1,7 +1,7 @@
 # mykeep
 
-## To start project
+### To start project
 
-### yarn init
-### yarn build
-### yarn start
+`yarn init`
+`yarn build`
+`yarn start`
