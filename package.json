@@ -1,0 +1,24 @@
+{
+  "name": "mykeep",
+  "version": "1.0.0",
+  "description": "app for keeping notes",
+  "main": "server/index.js",
+  "author": "MaratKa",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel server -d dist",
+    "start": "nodemon dist/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "mongoose": "^5.4.0",
+    "nodemon": "^1.18.8"
+  }
+}
