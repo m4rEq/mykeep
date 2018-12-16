@@ -4,6 +4,8 @@ import * as db from './utils/DataBaseUtils'
 
 import {serverPort} from '../etc/config'
 
+// Logic work with database
+
 db.setUpConnection()
 
 const app = express()

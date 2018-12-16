@@ -2,6 +2,8 @@ import mongoose from "mongoose"
 import '../models/Note'
 import config from '../../etc/config'
 
+// Tools to connection to database
+
 const Note = mongoose.model('Note')
 
 export function setUpConnection() {

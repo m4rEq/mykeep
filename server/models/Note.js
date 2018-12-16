@@ -1,5 +1,7 @@
 import mongoose from 'mongoose'
 
+// Create schema of table in database
+
 const Schema = mongoose.Schema
 
 const NoteSchema = new Schema({
