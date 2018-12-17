@@ -3,25 +3,30 @@
 const path = require('path')
 
 module.exports = {
-    mode: "development",
+  mode: "development",
     entry: {
-        app: ["./client/main.js"]
+      app: ["./client/main.js"]
     },
-    output: {
-        //path: __dirname + '/public/build/',
-        path: path.resolve(__dirname, 'public/build/'),
-        //publicPath: "build/",
-        filename: "bundle.js"
-    },
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: { loader: "babel-loader" }
-            }
-        ]
-    }
+  output: {
+    //path: __dirname + '/public/build/',
+    path: path.resolve(__dirname, 'public/build/'),
+    //publicPath: "build/",
+    filename: "bundle.js"
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: { loader: "babel-loader" }
+      },
+      {
+        test: /\.jsx$/,
+        exclude: /node_modules/,
+        use: { loader: "babel-loader" }
+      }
+    ]
+  }
 }
 
 /*

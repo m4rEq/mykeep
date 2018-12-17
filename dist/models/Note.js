@@ -4,6 +4,7 @@ var _mongoose = _interopRequireDefault(require("mongoose"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// Create schema of table in database
 var Schema = _mongoose.default.Schema;
 var NoteSchema = new Schema({
   title: {

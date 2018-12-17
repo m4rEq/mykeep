@@ -16,6 +16,7 @@ var _config = _interopRequireDefault(require("../../etc/config"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// Tools to connection to database
 var Note = _mongoose.default.model('Note');
 
 function setUpConnection() {
